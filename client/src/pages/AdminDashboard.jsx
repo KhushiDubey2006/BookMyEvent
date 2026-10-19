@@ -14,6 +14,10 @@
 //     const [formData, setFormData] = useState({
 //         title: '', description: '', date: '', location: '', category: '', totalSeats: '', ticketPrice: '', image: ''
 //     });
+<<<<<<< HEAD
+=======
+     
+>>>>>>> 5107805 (Add Wishlist page and update dashboard)
 
 //     useEffect(() => {
 //         if (!user || user.role !== 'admin') {
@@ -38,8 +42,13 @@
 //         }
 //     };
 
+<<<<<<< HEAD
 //     const handleCreateEvent = async (e) => {
 //         e.preventDefault();
+=======
+//      const handleCreateEvent = async (e) => {
+//          e.preventDefault();
+>>>>>>> 5107805 (Add Wishlist page and update dashboard)
 //         try {
 //             await api.post('/events', formData);
 //             setShowEventForm(false);
@@ -50,6 +59,47 @@
 //         }
 //     };
 
+<<<<<<< HEAD
+=======
+//     const resetForm = () => {
+//     setFormData({ title: '', description: '', date: '', location: '', category: '', totalSeats: '', ticketPrice: '', image: '' });
+//     setEditingId(null);
+//     setShowEventForm(false);
+// };
+
+// const handleSubmitEvent = async (e) => {
+//     e.preventDefault();
+//     try {
+//         if (editingId) {
+//             await api.put(`/events/${editingId}`, formData);
+//         } else {
+//             await api.post('/events', formData);
+//         }
+//         resetForm();
+//         fetchData();
+//     } catch (error) {
+//         alert(error.response?.data?.message || `Error ${editingId ? 'updating' : 'creating'} event`);
+//     }
+// };
+
+// const handleEditEvent = (event) => {
+//     setFormData({
+//         title: event.title || '',
+//         description: event.description || '',
+//         date: event.date ? new Date(event.date).toISOString().split('T')[0] : '',
+//         location: event.location || '',
+//         category: event.category || '',
+//         totalSeats: event.totalSeats || '',
+//         ticketPrice: event.ticketPrice ?? '',
+//         image: event.image || ''
+//     });
+//     setEditingId(event._id);
+//     setShowEventForm(true);
+//     window.scrollTo({ top: 0, behavior: 'smooth' });
+// };
+
+
+>>>>>>> 5107805 (Add Wishlist page and update dashboard)
 //     const handleDeleteEvent = async (id) => {
 //         if (window.confirm('Are you sure you want to delete this event?')) {
 //             try {
@@ -241,9 +291,12 @@
 // export default AdminDashboard;
 
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 5107805 (Add Wishlist page and update dashboard)
 import React, { useState, useEffect, useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
 import api from '../utils/axios';
@@ -572,4 +625,7 @@ const AdminDashboard = () => {
     );
 };
 
-export default AdminDashboard
+
+
+export default AdminDashboard;
+
